@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎁 Surprise – For You, Kapide!</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .surprise-btn {
+      background-color: #fff;
+      color: #8e44ad;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 2rem;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    .surprise-btn:hover {
+      background-color: #f8e9f4;
+    }
+
+    .hidden-message {
+      display: none;
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 1.5rem;
+      border-radius: 12px;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎁 Surprise for You, Halli!</h1>
+    <p>Illa kapide, illi enu sigalla button ottu 😜</p>
+    <button class="surprise-btn" onclick="revealSurprise()">Click to Reveal</button>
+
+    <div class="hidden-message" id="surpriseMessage">
+      💜 ಮಂಗಿ, from that first bench day to today — <br />
+      ನೀನು ನನ್ನ life-alli best blessing! <br />
+      No matter how far, how busy…<br />
+      ನಿನ್ನ ಹೆಸರು ಕೇಳಿದ್ರೆ ಈ ಹೃದಯ lighting ಆಗ್ತದೆ 😌<br />
+      Forever is not a word anymore. Forever is *you*. 🤍<br />
+      <br />
+      PS: Check the final page for one last gift 👀
+    </div>
+
+    <div class="nav-links">
+      <a href="../index.html" class="nav-btn">🏠 Home</a>
+      <a href="letter.html" class="nav-btn">Next ⏩</a>
+    </div>
+  </div>
+
+  <script>
+    function revealSurprise() {
+      document.getElementById("surpriseMessage").style.display = "block";
+    }
+  </script>
+</body>
+</html>

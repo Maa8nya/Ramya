@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forever Wall 🧱</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .wall-container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .brick {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 1.5rem;
+      width: 280px;
+      min-height: 120px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.15);
+      font-size: 1rem;
+      color: #fdfdfd;
+      text-align: left;
+      position: relative;
+    }
+
+    .brick::before {
+      content: "💭";
+      position: absolute;
+      top: -1rem;
+      left: -1rem;
+      font-size: 1.5rem;
+      color: #f5e6ff;
+    }
+
+    .brick:nth-child(even)::before {
+      content: "🧡";
+    }
+
+    .brick:nth-child(3n)::before {
+      content: "✨";
+    }
+
+    .brick:nth-child(5n)::before {
+      content: "📌";
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    .nav-links {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Our Forever Wall 🧱</h2>
+
+    <div class="wall-container">
+      <div class="brick">Ninna hesaru yaaradru helidru, naale nan kannalli smile barutte antha artha. 😊</div>
+      <div class="brick">"Don’t ever forget — neenu yellaru haage alla. Neenu special, unique, and irreplaceable."</div>
+      <div class="brick">Whenever you feel low, just remember: "I AM ALWAYS THERE!!!!!!!"</div>
+      <div class="brick">Things I’ll never stop doing: standing by you, cheering for you, laughing with you — always. 💫</div>
+      <div class="brick">My heart = Halli’s permanent home. 🐒🤍</div>
+      <div class="brick">Even in silence, our bond speaks. ಈ ಸ್ನೇಹ, ಮಾತು ಬೇಕಾಗಿಲ್ಲ, moments ಸಾಕು.</div>
+      <div class="brick">No matter how far, no matter how busy — "ninna message nodidre" still brings the same joy. 💌</div>
+      <div class="brick">I promise to celebrate every little win of yours like it's mine. ✨</div>
+      <div class="brick">Friendship quotes don’t define us. *Namma bond* itself is a quote — unmatched, unread, but deeply felt. 💜</div>
+    </div>
+
+    <div class="nav-links">
+      <a href="../index.html" class="nav-btn">🏠 Home</a>
+      <a href="gallery.html" class="nav-btn">📸 Gallery</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery – From Strangers to Soulmates</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    figure {
+      margin: 0;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeSlideIn 0.6s forwards;
+      animation-delay: var(--delay);
+    }
+
+    figure img {
+      width: 80%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: block;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+
+    figure img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(142, 68, 173, 0.7);
+    }
+
+    figcaption {
+      margin-top: 0.6rem;
+      font-style: italic;
+      color: #f0d4fc;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+
+    /* Stagger animation delays for each figure */
+    .gallery figure:nth-child(1) { --delay: 0.1s; }
+    .gallery figure:nth-child(2) { --delay: 0.3s; }
+    .gallery figure:nth-child(3) { --delay: 0.5s; }
+    .gallery figure:nth-child(4) { --delay: 0.7s; }
+    .gallery figure:nth-child(5) { --delay: 0.9s; }
+
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📸 Our Photo Gallery❤️</h1>
+    <p>A few frames from the forever moments, each one holding a story 💜</p>
+
+    <div class="gallery">
+      <figure>
+        <img src="../images/pic1.jpeg" alt="Memory 1" />
+        <figcaption>Our first pic together!❤️</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/pic2.jpeg" alt="Memory 2" />
+        <figcaption>That perfect outing on a rainy day ☔️</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/pic3.jpeg" alt="Memory 3" />
+        <figcaption>Moments that made life beautiful 💜</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/pic4.jpeg" alt="Memory 4" />
+        <figcaption>Forever chasing dreams together ✨</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/pic5.jpeg" alt="Memory 5" />
+        <figcaption>Sunsets that witnessed our secrets 🌅</figcaption>
+      </figure>
+      <!-- Add more figure elements with images and notes as needed -->
+    </div>
+
+    <div class="nav-links">
+      <a href="../index.html" class="nav-btn">🏠 Home</a>
+      <a href="poems.html" class="nav-btn">Next ⏩</a>
+    </div>
+  </div>
+</body>
+</html>
