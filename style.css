@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #8e44ad, #d2b4de);
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+a.year-btn, a.feature-btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  color: #8e44ad;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.year-btn:hover, a.feature-btn:hover {
+  background: #fce4ec;
+}
+
+.footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #f8f8f8;
+}
+
+.nav-links {
+  margin-top: 2rem;
+}
+
+.nav-btn {
+  background: #fff;
+  color: #8e44ad;
+  padding: 0.75rem 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-btn:hover {
+  background: #f5eef8;
+}
+
+.features {
+  margin-top: 2rem;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #e0bfff;
+  margin: 2rem 0;
+  text-align: center;
+  text-shadow: 0 0 4px #732d91;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* Allows stacking on small screens */
+}
+
+.memory-img {
+  width: 100%;
+  max-width: 320px;
+  max-height: 240px;
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(198, 134, 255, 0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+
+
